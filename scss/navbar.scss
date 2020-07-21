@@ -1,9 +1,14 @@
 .navbar {
     background-color: $introBG;
-    padding: 3.5rem 4rem;
+    padding: 3.5rem 0;
     @include center;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
+}
+
+.sitename__logo {
+    padding-left: 3rem;
 }
 
 .nav {
@@ -13,28 +18,94 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        
+        padding-right: 3rem;
     }   
+
+    &__list--mobile {
+        position: absolute;
+        top: 10rem;
+        padding: 1rem 0 3rem; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: $introBG;
+        width: 100%;
+        font-family: $headingsFont
+    }
 
     &__item {
         list-style-type: none;
         font-size: 1.8rem;
         margin-left: 3rem;
         letter-spacing: 1px;
+
+        &--mobile {
+            margin-bottom: 3rem;           
+            list-style-type: none;  
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+    &__link, &__link--mobile {
+        color: #fff;
+        text-decoration: none;
+        font-weight: $bold; 
+        letter-spacing: 1px;
+        font-size: 2.5rem;
+        text-transform: uppercase;
     }
 
     &__link {
-        color: #fff;
-        text-decoration: none;
+        font-weight: normal;
+        text-transform: capitalize;
+    }
 
-        &:hover {
-           border-bottom: 2px solid #fff;
-        }
+}
+
+.hamburger {
+    width: 3.5rem;
+    height: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .25rem 3rem;
+    transition: .5s ease;
+
+
+    &__line {
+        width: 100%;
+        height: .4rem;
+        background-color: #fff;
     }
 }
 
+.hamburger, .nav__list--mobile {
+    display: none;
+}
+
+.hamburger.active {
+    transform: rotate(180deg);
+}
+
 @media all and (max-width: 768px) {
-    .nav {
+    .nav__list {
         display: none;
+    }
+
+    .sitename__logo {
+        width: 80%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media all and (max-width: 321px) {
+    .sitename__logo {
+        width: 60%;
     }
 }
