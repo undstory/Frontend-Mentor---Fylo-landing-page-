@@ -36,7 +36,7 @@
 
     &__item {
         list-style-type: none;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-left: 3rem;
         letter-spacing: 1px;
 
@@ -61,6 +61,7 @@
     &__link {
         font-weight: normal;
         text-transform: capitalize;
+        font-size: 1.8rem !important; 
     }
 
 }
@@ -107,5 +108,11 @@
 @media all and (max-width: 321px) {
     .sitename__logo {
         width: 60%;
+    }
+}
+
+@media all and (min-width: 769px) {
+    .nav__list--mobile {
+        display: none !important;
     }
 }
