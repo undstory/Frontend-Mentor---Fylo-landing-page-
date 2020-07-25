@@ -46,6 +46,10 @@
 
 @media all and (max-width: 768px) {
 
+    .intro {
+        background-image: url(../images/bg-curvy-mobile.svg);
+    }
+
     .intro__img {
         width: 80%;
         height: 80%;
