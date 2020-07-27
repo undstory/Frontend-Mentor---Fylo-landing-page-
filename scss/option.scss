@@ -2,21 +2,16 @@
     background-color: $mainBG;
     color: #fff;
     font-family: $bodyFont;
+    
 
     &__wrapper {
-
         display: flex;
-        flex-direction: column;
-        
-        justify-content: center;
-        border: 1px solid red;
-        width: 80%;
         flex-wrap: wrap;
-        column-width: 50%;
-        column-count: 2;
-        
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
         margin: 0 auto;
-
+        padding: 5rem;
     }
    
 
@@ -24,12 +19,28 @@
         display: flex; 
         flex-direction: column;
         text-align: center;
-        justify-content: center;
-        width: 50%;
-        
+        align-items: center; 
+        margin-top: 6rem;
+
     }
 
     &__icon {
-        max-width: 100%;
+        margin-bottom: 2rem;
     }
+
+    &__title {
+        font-size: 2.3rem;
+        font-weight: $bold;
+    }
+    &__text {
+        max-width: 36rem;
+        font-size: 1.5rem;
+        font-weight: normal;
+        line-height: 1.4;
+    }
+
+}
+
+.exception .option__icon {
+    margin-bottom: 1rem;
 }
