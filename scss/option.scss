@@ -1,7 +1,5 @@
 .option {
-    background-color: $mainBG;
-    color: #fff;
-    font-family: $bodyFont;
+    @include look;
     
 
     &__wrapper {

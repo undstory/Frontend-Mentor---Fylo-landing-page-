@@ -1,0 +1,41 @@
+.extra {
+    @include look;
+
+    &__wrapper {
+        width: 80%;
+        padding: 5rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    &__img {
+        width: 50rem;
+    }
+
+    &__offer {
+        padding-left: 5%;
+    }
+
+    &__title {
+        font-size: 4rem;
+    }
+
+    &__text {
+        font-size: 1.7rem;
+        line-height: 1.6;
+    }
+
+    &__link {
+        font-size: 1.7rem;
+        color: $fyloCyan;
+        padding-bottom: .5rem;
+        text-decoration: none;
+        display: inline-block;
+        width: fit-content;
+        
+        border-bottom: 1px solid $fyloCyan;
+    }
+}

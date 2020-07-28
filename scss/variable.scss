@@ -39,3 +39,9 @@ $fyloBlue: hsl(198, 60%, 50%);
     text-transform: capitalize;
     letter-spacing: 1px;
 }
+
+@mixin look {
+    background-color: $mainBG;
+    color: #fff;
+    font-family: $bodyFont;
+}
