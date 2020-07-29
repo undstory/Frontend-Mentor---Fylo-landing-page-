@@ -1,0 +1,20 @@
+.testimonial {
+    @include look;
+
+    &__wrapper {
+        margin: 0 auto;
+        padding: 8rem 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        background-color: $testBG;
+        width: 30%;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+}
