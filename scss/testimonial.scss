@@ -1,26 +1,19 @@
 .testimonial {
     @include look;
+    padding-bottom: 15rem;
 
     &__wrapper {
         margin: 0 auto;
         padding: 8rem 10rem;
         display: flex;
         justify-content: space-between;
+        z-index: 0;
     }
 
     &__item {
         background-color: $testBG;
         max-width: 26%;
         padding: 4rem 3rem; 
-        position: relative;
-        z-index: 0;
-    }
-
-    &__quotes {
-        position: absolute;
-        top: -3.5rem;
-        left: -1.3rem;
-        z-index: -55;
     }
 
     &__text {
@@ -58,4 +51,74 @@
         
     }
 
+}
+
+.quote {
+    position: relative;
+    z-index: 2;
+}
+
+.quote::before {
+    content: url(../images/bg-quotes.png);
+    position: absolute;
+    top: 4.5rem;
+    left: 9rem;
+    z-index: -1;
+}
+
+@media all and (max-width: 1200px) {
+    .testimonial__wrapper {
+        padding: 8rem 6rem;
+    }
+
+    .quote::before {
+        left: 5rem;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .testimonial__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial__item {
+        max-width: 70%;
+        margin-bottom: 5rem;
+    }
+
+    .quote::before {
+        display: none;
+    }
+
+    .testimonial__img {
+        width: 10%;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .testimonial__wrapper {
+        padding: 3rem;
+    }
+
+    .testimonial__item {
+        padding-top: 2rem;
+    }
+
+    .testimonial__text {
+        font-size: 1.4rem;
+    }
+
+    .testimonial__img {
+        width: 15%;
+    }
+
+    .testimonial__author--name {
+        font-size: 1.2rem;
+    }
+
+    .testimonial__author--role {
+        font-size: 1.1rem;
+    }
 }

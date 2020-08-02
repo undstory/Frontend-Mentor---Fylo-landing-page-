@@ -1,0 +1,6 @@
+.footer {
+    @include look;
+    background-color: $footBG;
+    padding: 10rem;
+    position: relative;
+}

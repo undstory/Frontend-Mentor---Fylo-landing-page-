@@ -1,0 +1,96 @@
+.contact {
+    position: absolute;
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 5rem;
+    background-color: $introBG;
+    box-shadow: 5px 5px 20px #182019;
+
+    &__title {
+        font-size: 3.5rem;
+        margin: 1rem
+    }
+
+    &__text {
+        font-size: 1.7rem;
+        text-align: center;
+        line-height: 1.8;
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__input {
+        width: 50%; 
+        height: 4.5rem;
+        margin-right: 2rem;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        padding: 0 2rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__btn {
+        background: linear-gradient(to right, $fyloCyan, $fyloBlue);
+        border-radius: 50px;
+        border: none; 
+        outline: none;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0 3rem;
+        text-transform: capitalize;
+        font-weight: $bold;
+        height: 4.5rem;
+        font-size: 1.5rem;
+        max-width: 25rem;
+        transition: .6s ease;
+
+        &:hover {
+            letter-spacing: 1px;
+            transition: .6s ease;
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    
+    .contact {
+        top: -20rem;
+        padding: 2rem;
+    }
+
+    .contact__title {
+        font-size: 2.5rem;
+    }
+
+    .contact__text {
+        font-size: 1.5rem;
+    }
+
+    .contact__form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__input {
+        margin: 1.5rem 0;
+        width: 80%;
+    }
+
+    .contact__btn:hover {
+        letter-spacing: 0;
+    }
+}
