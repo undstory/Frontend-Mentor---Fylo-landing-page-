@@ -65,6 +65,12 @@
     }
 }
 
+@media all and (max-width: 1000px) {
+    .contact {
+        top: -20rem;
+    }
+}
+
 @media all and (max-width: 768px) {
     
     .contact {
