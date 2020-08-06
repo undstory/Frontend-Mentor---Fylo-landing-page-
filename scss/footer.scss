@@ -7,19 +7,71 @@
     &__info {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+
+        align-content: flex-start;
     }
 
     &__local {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+
+        &--icon {
+            margin-top: 2.8rem;
+        }
     }
 
     &__text {
-        width: 40%;
+        // width: 50%;
         margin-left: 2rem;
         line-height: 1.6;
         font-size: 2rem;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+
+    &__phone, &__email {
+        display: flex;
+        margin-bottom: 2rem;
+
+        &--number {
+            margin-left: 2.5rem;
+        }
+    }
+
+    &__email--address {
+        margin-left: 2.5rem;
+    }
+
+    &__menu {
+
+        &--left, &--right {
+            display: flex;
+            flex-direction: column;
+            font-size: 2rem;
+            list-style-type: none;
+
+            li {
+                text-transform: capitalize;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__media {
+        display: flex;
+       margin-top: 2rem;
+
+       &--instagram, &--facebook, &--twitter {
+           font-size: 3.5rem;
+           margin-left: 2rem;
+       }
     }
 }
 
