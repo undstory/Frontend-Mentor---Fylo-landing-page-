@@ -78,6 +78,10 @@
            margin-left: 2rem;
        }
     }
+
+    &__end {
+        margin-top: 3rem;
+    }
 }
 
 .sitename__logo--footer {
@@ -112,5 +116,14 @@
 @media all and (max-width: 421px) {
     .sitename__logo--footer {
         width: 50%;
+    }
+
+    .extra__wrapper {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+
+    .option__wrapper {
+        padding-top: 5rem;
     }
 }
