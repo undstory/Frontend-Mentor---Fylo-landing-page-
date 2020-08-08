@@ -1,7 +1,6 @@
 .option {
     @include look;
     
-
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -9,7 +8,7 @@
         align-items: center;
         width: 70%;
         margin: 0 auto;
-        padding: 5rem;
+        padding: 10rem 5rem 3rem;
     }
    
 

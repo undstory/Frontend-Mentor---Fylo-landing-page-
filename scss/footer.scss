@@ -1,39 +1,42 @@
 .footer {
     @include look;
     background-color: $footBG;
-    padding: 10rem;
+    padding: 15rem 10rem 10rem;
     position: relative;
 
     &__info {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-
         align-content: flex-start;
+        flex-wrap: wrap;
     }
 
     &__local {
         display: flex;
         align-items: flex-start;
+        padding-right: 1rem;
+        width: 40%;
 
         &--icon {
             margin-top: 2.8rem;
+            font-size: 2rem;
         }
     }
 
     &__text {
-        // width: 50%;
-        margin-left: 2rem;
         line-height: 1.6;
-        font-size: 2rem;
+        font-size: 1.6rem;
+        margin-left: 2rem;
     }
 
     &__contact {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-top: 2rem;
+        padding: 0 2rem;
     }
 
     &__phone, &__email {
@@ -54,8 +57,9 @@
         &--left, &--right {
             display: flex;
             flex-direction: column;
-            font-size: 2rem;
+            font-size: 1.5rem;
             list-style-type: none;
+            padding: 0 2rem;
 
             li {
                 text-transform: capitalize;
@@ -67,6 +71,7 @@
     &__media {
         display: flex;
        margin-top: 2rem;
+       padding: 0 2rem;
 
        &--instagram, &--facebook, &--twitter {
            font-size: 3.5rem;
@@ -88,6 +93,24 @@
 
 @media all and (max-width: 768px) {
     .sitename__logo--footer {
-        width: 30%;
+        width: 40%;
+    }
+
+    .footer {
+        padding: 20rem 5rem 10rem;
+
+        &__local {
+            width: 100%;
+        }
+
+        &__info {
+            flex-direction: column;
+        }
+    }
+}
+
+@media all and (max-width: 421px) {
+    .sitename__logo--footer {
+        width: 50%;
     }
 }
